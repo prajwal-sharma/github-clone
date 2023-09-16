@@ -15,7 +15,7 @@ function User() {
         getUserRepos(params.login)
 
     }, [])
-    console.log(repos)
+    // console.log(repos)
     const {
         name,
         type,
@@ -161,7 +161,7 @@ function User() {
                     </div>
                 </div>
             </div>
-            <RepoList/>
+            <RepoList repos={repos}/>
         </div>
     </>
 }
